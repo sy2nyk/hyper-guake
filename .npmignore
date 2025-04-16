@@ -1,0 +1,25 @@
+# Source files
+src/
+tsconfig.json
+
+# Development files
+.github/
+.git/
+.gitignore
+.cursorignore
+DEVELOPMENT.md
+TROUBLESHOOTING.md
+
+# Build outputs not in dist
+coverage/
+node_modules/
+
+# Tests
+test/
+*.test.ts
+*.spec.ts
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-* 

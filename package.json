@@ -1,0 +1,39 @@
+{
+    "name": "hyper-guake",
+    "version": "0.1.0",
+    "description": "Quake-like dropdown plugin for Hyper terminal",
+    "main": "dist/index.js",
+    "files": [
+        "dist",
+        "LICENSE",
+        "README.md"
+    ],
+    "scripts": {
+        "clean": "rimraf dist",
+        "build": "npm run clean && tsc",
+        "watch": "tsc --watch",
+        "prepublishOnly": "npm run build",
+        "release": "npm version patch && git push && git push --tags && npm publish",
+        "pack-preview": "npm pack --dry-run"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sy2nyk/hyper-guake.git"
+    },
+    "keywords": [
+        "hyper",
+        "hyper-plugin",
+        "terminal",
+        "quake",
+        "dropdown"
+    ],
+    "dependencies": {
+        "electron": "^35.1.5"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.16",
+        "rimraf": "^5.0.10",
+        "typescript": "^5.8"
+    }
+}
